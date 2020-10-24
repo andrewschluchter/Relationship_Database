@@ -1,0 +1,193 @@
+strict digraph {
+
+    /*
+    *** Clusters
+    (semi-default) 0 = unknown
+    1 = San Diego area
+    2 = LA area
+    3 = Bay Area
+    4 = Oregon
+    5 = Ohio
+    6 = Illinois
+    7 = Virginia
+
+    *** Colors
+    (default) white = #ffffffbb = undeclared/unknown
+    palegreen = #22ff99bb = self & Sandra
+    tan = coworkers
+    dodgerblue = #55aaffbb = safe but not open
+    violet = safe & open
+    cyan = #22ffffbb = good friends
+    lightyellow = caution: watch over
+    red = #ff4444bb = caution: dangerous
+    gray42 = #888888bb = dead
+
+    *** Edges
+    (default) style=solid = directly related
+    style=dashed = family, exact relation unknown
+    style=dotted = unknown or no relation
+
+    *** Arrows
+    (default) arrowhead=normal = a direct product of
+    arrowhead=none = partners
+    arrowhead=dot = cousin
+    arrowhead=tee = living with, but no relation
+    arrowhead=diamond = adoptive
+    */
+
+    /* Full entry format:
+    <node_name>
+    [label=<FULL NAME<BR/><FONT POINT-SIZE="8">
+    PHONE NUMBER<BR/>
+    EMAIL<BR/>
+    BIRTHDAY<BR/>
+    ADDRESS LINE 1<BR/>
+    ADDRESS LINE 2<BR/>
+    Current: CURRENT DATE
+    </FONT>>shape="none" style="filled" fillcolor="white" cluster=0];
+    */
+
+    graph [overlap_scaling=6 splines=true overlap=false];
+
+    NONPROFESSIONAL [shape="none" style="bold" fillcolor="white" shape="tab" cluster=1]
+    PROFESSIONAL [shape="none" style="bold" fillcolor="white" shape="tab" cluster=1]
+
+    <Bob>
+    [label=<Bob<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="palegreen" cluster=1];
+
+    <Bill>
+    [label=<Bill<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="dodgerblue" cluster=5];
+
+    <Mob>
+    [label=<Mob<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="dodgerblue" cluster=5];
+
+    <Bill>
+    [label=<Bill<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="dodgerblue" cluster=2];
+
+    <Rusty_Shackleford>
+    [label=<Rusty Shackleford<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="white" cluster=4];
+
+    <Turd_Ferguson>
+    [label=<Turd Ferguson<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="cyan" cluster=7];
+
+    <Boss>
+    [label=<Boss<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="tan" cluster=1];
+
+    <Underling>
+    [label=<Underling<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="tan" cluster=1];
+
+    <Steve>
+    [label=<Steve<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="cyan" cluster=6];
+
+    <Gramps>
+    [label=<Gramps<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="dodgerblue" cluster=5];
+
+    <Grammy>
+    [label=<Grammy<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="dodgerblue" cluster=5];
+
+    <Grandpapa>
+    [label=<Grandpapa<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="dodgerblue" cluster=5];
+
+    <Gam_Gam>
+    [label=<Gam Gam<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>shape="none" style="filled" fillcolor="dodgerblue" cluster=5];
+
+    <Burt>
+    [label=<Burt<BR/><FONT POINT-SIZE="8">
+    </FONT>>shape="none" style="filled" fillcolor="white" cluster=0];
+
+    PROFESSIONAL -> Rusty_Shackleford [style=solid arrowhead=normal]
+    NONPROFESSIONAL -> Turd_Ferguson [style=solid arrowhead=normal]
+    PROFESSIONAL -> Boss [style=solid arrowhead=normal]
+    PROFESSIONAL -> Underling [style=solid arrowhead=normal]
+    NONPROFESSIONAL -> Steve [style=solid arrowhead=normal]
+    Bob -> NONPROFESSIONAL [style=solid arrowhead=normal]
+    Bob -> PROFESSIONAL [style=solid arrowhead=normal]
+    Bill -> Mob [style=solid arrowhead=none]
+    Bill -> Bob [style=solid arrowhead=normal]
+    Mob -> Bob [style=solid arrowhead=normal]
+    Gramps -> Grammy [style=solid arrowhead=none]
+    Gramps -> Bill [style=solid arrowhead=normal]
+    Grammy -> Bill [style=solid arrowhead=normal]
+    Grandpapa -> Gam_Gam [style=solid arrowhead=none]
+    Grandpapa -> Mob [style=solid arrowhead=normal]
+    Gam_Gam -> Mob [style=solid arrowhead=normal]
+    Bill -> Burt [style=dashed arrowhead=normal]
+    NONPROFESSIONAL -> Turd_Ferguson [style=dotted arrowhead=normal]
+    NONPROFESSIONAL -> Steve [style=dotted arrowhead=normal]
+    PROFESSIONAL -> Boss [style=dotted arrowhead=normal]
+    PROFESSIONAL -> Underling [style=dotted arrowhead=normal]
+    PROFESSIONAL -> Rusty_Shackleford [style=dotted arrowhead=normal]
+}

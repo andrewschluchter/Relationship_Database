@@ -1,0 +1,246 @@
+strict digraph {
+	graph [bb="0,0,771.44,640.72",
+		overlap=prism,
+		overlap_scaling=6,
+		splines=true,
+		start=1
+	];
+	node [label="\N"];
+	NONPROFESSIONAL	 [cluster=1,
+		fillcolor=white,
+		height=0.5,
+		pos="436.09,160.67",
+		shape=tab,
+		style=bold,
+		width=2.0139];
+	<Turd_Ferguson>	 [cluster=7,
+		fillcolor=cyan,
+		height=0.97222,
+		label=<Turd Ferguson<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="377.34,35",
+		shape=none,
+		style=filled,
+		width=1.3472];
+	NONPROFESSIONAL -> <Turd_Ferguson>	 [arrowhead=normal,
+		pos="e,393.75,70.088 427.68,142.67 419.96,126.16 408.21,101.03 398.01,79.206",
+		style=dotted];
+	<Steve>	 [cluster=6,
+		fillcolor=cyan,
+		height=0.97222,
+		label=<Steve<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="539.89,59.637",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	NONPROFESSIONAL -> <Steve>	 [arrowhead=normal,
+		pos="e,503.85,94.711 454.65,142.61 466.27,131.3 481.75,116.23 496.34,102.03",
+		style=dotted];
+	PROFESSIONAL	 [cluster=1,
+		fillcolor=white,
+		height=0.5,
+		pos="580.48,413.46",
+		shape=tab,
+		style=bold,
+		width=1.6111];
+	<Rusty_Shackleford>	 [cluster=4,
+		fillcolor=white,
+		height=0.86111,
+		label=<Rusty Shackleford<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="691.13,323.43",
+		shape=none,
+		style=filled,
+		width=1.625];
+	PROFESSIONAL -> <Rusty_Shackleford>	 [arrowhead=normal,
+		pos="e,652.91,354.53 602.61,395.45 614.74,385.58 630.25,372.96 644.89,361.05",
+		style=dotted];
+	<Boss>	 [cluster=1,
+		fillcolor=tan,
+		height=0.97222,
+		label=<Boss<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="725.94,464.65",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	PROFESSIONAL -> <Boss>	 [arrowhead=normal,
+		pos="e,679.96,448.47 631.76,431.5 644.28,435.91 657.72,440.64 670.42,445.11",
+		style=dotted];
+	<Underling>	 [cluster=1,
+		fillcolor=tan,
+		height=0.97222,
+		label=<Underling<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="606.82,554.37",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	PROFESSIONAL -> <Underling>	 [arrowhead=normal,
+		pos="e,600.26,519.28 583.87,431.59 587.51,451.08 593.44,482.81 598.36,509.13",
+		style=dotted];
+	<Bob>	 [cluster=1,
+		fillcolor=palegreen,
+		height=0.97222,
+		label=<Bob<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="383.88,341.2",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	<Bob> -> NONPROFESSIONAL	 [arrowhead=normal,
+		pos="e,430.86,178.76 394.07,305.97 403.99,271.67 418.87,220.24 428,188.66",
+		style=solid];
+	<Bob> -> PROFESSIONAL	 [arrowhead=normal,
+		pos="e,531.34,395.4 429.48,357.96 456.89,368.04 492.07,380.97 521.57,391.81",
+		style=solid];
+	<Bill>	 [cluster=2,
+		fillcolor=dodgerblue,
+		height=0.97222,
+		label=<Bill<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="192.96,332.83",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	<Bill> -> <Bob>	 [arrowhead=normal,
+		pos="e,338.19,339.2 238.69,334.83 265.51,336.01 299.6,337.51 328.01,338.75",
+		style=solid];
+	<Mob>	 [cluster=5,
+		fillcolor=dodgerblue,
+		height=0.97222,
+		label=<Mob<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    email<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="269.06,467.56",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	<Bill> -> <Mob>	 [arrowhead=none,
+		pos="212.75,367.87 223.94,387.68 237.88,412.37 249.1,432.22",
+		style=solid];
+	<Burt>	 [cluster=0,
+		fillcolor=white,
+		height=0.5,
+		label=<Burt<BR/><FONT POINT-SIZE="8">
+    </FONT>>,
+		pos="154.38,191.73",
+		shape=none,
+		style=filled,
+		width=0.75];
+	<Bill> -> <Burt>	 [arrowhead=normal,
+		pos="e,159.31,209.76 183.32,297.59 176.74,273.49 168.12,241.99 162.01,219.63",
+		style=dashed];
+	<Mob> -> <Bob>	 [arrowhead=normal,
+		pos="e,352.07,376.21 301.04,432.36 314.73,417.3 330.83,399.58 345.18,383.79",
+		style=solid];
+	<Gramps>	 [cluster=5,
+		fillcolor=dodgerblue,
+		height=0.86111,
+		label=<Gramps<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="45.5,286.39",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	<Gramps> -> <Bill>	 [arrowhead=normal,
+		pos="e,147.39,318.48 91.348,300.83 105.98,305.44 122.33,310.59 137.57,315.38",
+		style=solid];
+	<Grammy>	 [cluster=5,
+		fillcolor=dodgerblue,
+		height=0.86111,
+		label=<Grammy<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="56.103,383.22",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	<Gramps> -> <Grammy>	 [arrowhead=none,
+		pos="48.913,317.56 50.124,328.62 51.486,341.05 52.696,352.1",
+		style=solid];
+	<Grammy> -> <Bill>	 [arrowhead=normal,
+		pos="e,147.12,349.7 101.67,366.44 113.21,362.19 125.72,357.58 137.68,353.18",
+		style=solid];
+	<Grandpapa>	 [cluster=5,
+		fillcolor=dodgerblue,
+		height=0.86111,
+		label=<Grandpapa<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="286.8,609.72",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	<Grandpapa> -> <Mob>	 [arrowhead=normal,
+		pos="e,273.44,502.68 282.91,578.52 280.5,559.27 277.38,534.26 274.71,512.86",
+		style=solid];
+	<Gam_Gam>	 [cluster=5,
+		fillcolor=dodgerblue,
+		height=0.86111,
+		label=<Gam Gam<BR/><FONT POINT-SIZE="8">
+    phone<BR/>
+    address line 1<BR/>
+    address line 2<BR/>
+    2020-10-20 00:00:00<BR/>
+    </FONT>>,
+		pos="187.79,589.41",
+		shape=none,
+		style=filled,
+		width=1.2639];
+	<Grandpapa> -> <Gam_Gam>	 [arrowhead=none,
+		pos="241.06,600.33 238.53,599.81 235.98,599.29 233.45,598.77",
+		style=solid];
+	<Gam_Gam> -> <Mob>	 [arrowhead=normal,
+		pos="e,245.5,502.87 208.51,558.34 218.03,544.06 229.49,526.88 239.87,511.32",
+		style=solid];
+}

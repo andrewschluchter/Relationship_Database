@@ -1,0 +1,9 @@
+// run this python script to convert the excel workbook into gvmap script
+python3 excel_to_gvmap.py
+
+// embed all positions into place (for <int> = any integer, as a seed):
+// sfdp -Goverlap=prism -Gstart=<int> relations.gv > map_data.gv
+sfdp -Goverlap=prism -Gstart=2 relations.gv > map_data.gv
+
+// to convert the embedded code into an image:
+gvmap -e -c1 map_data.gv | neato -Ecolor="black" -n2 -Tpng > relations_map.png
